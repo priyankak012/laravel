@@ -4,6 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <form action="{{ route('data.store')}}" method="post">
+                    {{-- <input name="_token" type="hidden" value="{{ csrf_token() }}"/> --}}
                     @csrf
                     <h2 class="text-center mb-4">Contact Information</h2>
                     <div class="form-floating mb-3">
